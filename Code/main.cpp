@@ -1,19 +1,17 @@
-// main.cpp : Defines the entry point for the console application.  
-//  
-//////////////////////////////////////////////////////////////////////////  
-/// COPYRIGHT NOTICE  
-/// Copyright (c) 2021, MirTITH (https://github.com/MirTITH/)
-/// All rights reserved.  
-///   
-/// @file    main.cpp 
-/// @brief   Defines the entry point for the console application. 
-///   
-/// @version See const string VERSION
-/// @author  谢阳   
-/// @E-mail：200320620@stu.hit.edu.cn
-/// @date    2021/09/12
-///   
-//////////////////////////////////////////////////////////////////////////  
+/**
+* COPYRIGHT NOTICE 
+* Copyright (c) 2021, MirTITH (https://github.com/MirTITH/)
+* All rights reserved. 
+*   
+* @file    main.cpp 
+* @brief   Defines the entry point for the console application. 
+*   
+* @author  谢阳
+* @version See const string VERSION
+* @email：200320620@stu.hit.edu.cn
+* @date    2021/09/12
+* #license GNU 2.0
+*/
 
 //#include "stdafx.h"  
 #include "SerialPort.h"  
