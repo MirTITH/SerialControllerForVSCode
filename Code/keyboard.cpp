@@ -5,18 +5,18 @@ using namespace std;
 
 void KeyInput::up(bool IsDown)
 {
-	if (IsDown && key_up) // ³ÖĞø³¤°´
+	if (IsDown && key_up) // æŒç»­é•¿æŒ‰
 	{
 		if (GetDirKeyNum() == 1)
 		{
 			dir = Direct::up;
 		}
 	}
-	else if (IsDown && !key_up) // °´ÏÂË²¼ä
+	else if (IsDown && !key_up) // æŒ‰ä¸‹ç¬é—´
 	{
 		dir = Direct::up;
 	}
-	else // Î´°´ÏÂ
+	else // æœªæŒ‰ä¸‹
 	{
 	}
 
@@ -26,18 +26,18 @@ void KeyInput::up(bool IsDown)
 
 void KeyInput::down(bool IsDown)
 {
-	if (IsDown && key_down) // ³ÖĞø³¤°´
+	if (IsDown && key_down) // æŒç»­é•¿æŒ‰
 	{
 		if (GetDirKeyNum() == 1)
 		{
 			dir = Direct::down;
 		}
 	}
-	else if (IsDown && !key_down) // °´ÏÂË²¼ä
+	else if (IsDown && !key_down) // æŒ‰ä¸‹ç¬é—´
 	{
 		dir = Direct::down;
 	}
-	else // Î´°´ÏÂ
+	else // æœªæŒ‰ä¸‹
 	{
 	}
 
@@ -47,18 +47,18 @@ void KeyInput::down(bool IsDown)
 
 void KeyInput::left(bool IsDown)
 {
-	if (IsDown && key_left) // ³ÖĞø³¤°´
+	if (IsDown && key_left) // æŒç»­é•¿æŒ‰
 	{
 		if (GetDirKeyNum() == 1)
 		{
 			dir = Direct::left;
 		}
 	}
-	else if (IsDown && !key_left) // °´ÏÂË²¼ä
+	else if (IsDown && !key_left) // æŒ‰ä¸‹ç¬é—´
 	{
 		dir = Direct::left;
 	}
-	else // Î´°´ÏÂ
+	else // æœªæŒ‰ä¸‹
 	{
 	}
 
@@ -68,18 +68,18 @@ void KeyInput::left(bool IsDown)
 
 void KeyInput::right(bool IsDown)
 {
-	if (IsDown && key_right) // ³ÖĞø³¤°´
+	if (IsDown && key_right) // æŒç»­é•¿æŒ‰
 	{
 		if (GetDirKeyNum() == 1)
 		{
 			dir = Direct::right;
 		}
 	}
-	else if (IsDown && !key_right) // °´ÏÂË²¼ä
+	else if (IsDown && !key_right) // æŒ‰ä¸‹ç¬é—´
 	{
 		dir = Direct::right;
 	}
-	else // Î´°´ÏÂ
+	else // æœªæŒ‰ä¸‹
 	{
 	}
 
@@ -89,18 +89,18 @@ void KeyInput::right(bool IsDown)
 
 void KeyInput::brake(bool IsDown)
 {
-	if (IsDown && key_brake) // ³ÖĞø³¤°´
+	if (IsDown && key_brake) // æŒç»­é•¿æŒ‰
 	{
 		if (GetDirKeyNum() == 1)
 		{
 			dir = Direct::brake;
 		}
 	}
-	else if (IsDown && !key_brake) // °´ÏÂË²¼ä
+	else if (IsDown && !key_brake) // æŒ‰ä¸‹ç¬é—´
 	{
 		dir = Direct::brake;
 	}
-	else // Î´°´ÏÂ
+	else // æœªæŒ‰ä¸‹
 	{
 	}
 
@@ -110,18 +110,18 @@ void KeyInput::brake(bool IsDown)
 
 void KeyInput::stop(bool IsDown)
 {
-	if (IsDown && key_stop) // ³ÖĞø³¤°´
+	if (IsDown && key_stop) // æŒç»­é•¿æŒ‰
 	{
 		if (GetDirKeyNum() == 1)
 		{
 			dir = Direct::stop;
 		}
 	}
-	else if (IsDown && !key_stop) // °´ÏÂË²¼ä
+	else if (IsDown && !key_stop) // æŒ‰ä¸‹ç¬é—´
 	{
 		dir = Direct::stop;
 	}
-	else // Î´°´ÏÂ
+	else // æœªæŒ‰ä¸‹
 	{
 	}
 

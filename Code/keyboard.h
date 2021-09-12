@@ -13,7 +13,7 @@ enum class Direct
 	stop
 };
 
-// °´¼üÊäÈë
+// æŒ‰é”®è¾“å…¥
 class KeyInput
 {
 public:
@@ -38,8 +38,8 @@ public:
 	void right(bool IsDown);
 	void brake(bool IsDown);
 	void stop(bool IsDown);
-	Direct GetDir();//»ñÈ¡·½Ïò
-	int GetDirKeyNum(); //»ñÈ¡Í¬Ê±°´ÏÂµÄ·½Ïò¼üÊıÁ¿
+	Direct GetDir();//è·å–æ–¹å‘
+	int GetDirKeyNum(); //è·å–åŒæ—¶æŒ‰ä¸‹çš„æ–¹å‘é”®æ•°é‡
 private:
 	bool key_up = false;
 	bool key_down = false;
@@ -50,7 +50,7 @@ private:
 	Direct dir;
 };
 
-// °´¼üÊäÈëËÙ¶È¿ØÖÆ
+// æŒ‰é”®è¾“å…¥é€Ÿåº¦æ§åˆ¶
 class KeyInputSpeed
 {
 public:
@@ -67,18 +67,18 @@ public:
 
 	void up(bool IsDown)
 	{
-		if (IsDown && key_up) // ³ÖĞø³¤°´
+		if (IsDown && key_up) // æŒç»­é•¿æŒ‰
 		{
 			if (GetDirKeyNum() == 1)
 			{
 				dir = Direct::up;
 			}
 		}
-		else if (IsDown && !key_up) // °´ÏÂË²¼ä
+		else if (IsDown && !key_up) // æŒ‰ä¸‹ç¬é—´
 		{
 			dir = Direct::up;
 		}
-		else // Î´°´ÏÂ
+		else // æœªæŒ‰ä¸‹
 		{
 		}
 
@@ -88,18 +88,18 @@ public:
 
 	void down(bool IsDown)
 	{
-		if (IsDown && key_down) // ³ÖĞø³¤°´
+		if (IsDown && key_down) // æŒç»­é•¿æŒ‰
 		{
 			if (GetDirKeyNum() == 1)
 			{
 				dir = Direct::down;
 			}
 		}
-		else if (IsDown && !key_down) // °´ÏÂË²¼ä
+		else if (IsDown && !key_down) // æŒ‰ä¸‹ç¬é—´
 		{
 			dir = Direct::down;
 		}
-		else // Î´°´ÏÂ
+		else // æœªæŒ‰ä¸‹
 		{
 		}
 
@@ -107,7 +107,7 @@ public:
 		return;
 	}
 
-	Direct GetDir()//»ñÈ¡·½Ïò
+	Direct GetDir()//è·å–æ–¹å‘
 	{
 		if (GetDirKeyNum() != 0)
 		{
@@ -118,7 +118,7 @@ public:
 	}
 
 
-	int GetDirKeyNum() //»ñÈ¡Í¬Ê±°´ÏÂµÄ·½Ïò¼üÊıÁ¿
+	int GetDirKeyNum() //è·å–åŒæ—¶æŒ‰ä¸‹çš„æ–¹å‘é”®æ•°é‡
 	{
 		int result = 0;
 		if (key_up) result++;
@@ -131,7 +131,7 @@ private:
 	Direct dir;
 };
 
-// °´¼üÊäÈë×ªÏò¿ØÖÆ
+// æŒ‰é”®è¾“å…¥è½¬å‘æ§åˆ¶
 class KeyInputTurnRatio
 {
 public:
@@ -148,18 +148,18 @@ public:
 
 	void left(bool IsDown)
 	{
-		if (IsDown && key_left) // ³ÖĞø³¤°´
+		if (IsDown && key_left) // æŒç»­é•¿æŒ‰
 		{
 			if (GetDirKeyNum() == 1)
 			{
 				dir = Direct::left;
 			}
 		}
-		else if (IsDown && !key_left) // °´ÏÂË²¼ä
+		else if (IsDown && !key_left) // æŒ‰ä¸‹ç¬é—´
 		{
 			dir = Direct::left;
 		}
-		else // Î´°´ÏÂ
+		else // æœªæŒ‰ä¸‹
 		{
 		}
 
@@ -169,18 +169,18 @@ public:
 
 	void right(bool IsDown)
 	{
-		if (IsDown && key_right) // ³ÖĞø³¤°´
+		if (IsDown && key_right) // æŒç»­é•¿æŒ‰
 		{
 			if (GetDirKeyNum() == 1)
 			{
 				dir = Direct::right;
 			}
 		}
-		else if (IsDown && !key_right) // °´ÏÂË²¼ä
+		else if (IsDown && !key_right) // æŒ‰ä¸‹ç¬é—´
 		{
 			dir = Direct::right;
 		}
-		else // Î´°´ÏÂ
+		else // æœªæŒ‰ä¸‹
 		{
 		}
 
@@ -188,7 +188,7 @@ public:
 		return;
 	}
 
-	Direct GetDir()//»ñÈ¡·½Ïò
+	Direct GetDir()//è·å–æ–¹å‘
 	{
 		if (GetDirKeyNum() != 0)
 		{
@@ -199,7 +199,7 @@ public:
 	}
 
 
-	int GetDirKeyNum() //»ñÈ¡Í¬Ê±°´ÏÂµÄ·½Ïò¼üÊıÁ¿
+	int GetDirKeyNum() //è·å–åŒæ—¶æŒ‰ä¸‹çš„æ–¹å‘é”®æ•°é‡
 	{
 		int result = 0;
 		if (key_left) result++;
@@ -212,7 +212,7 @@ private:
 	Direct dir;
 };
 
-// °´¼üÊäÈë½ô¼±¿ØÖÆ
+// æŒ‰é”®è¾“å…¥ç´§æ€¥æ§åˆ¶
 class KeyInputEmergency
 {
 public:
@@ -229,18 +229,18 @@ public:
 
 	void brake(bool IsDown)
 	{
-		if (IsDown && key_brake) // ³ÖĞø³¤°´
+		if (IsDown && key_brake) // æŒç»­é•¿æŒ‰
 		{
 			if (GetDirKeyNum() == 1)
 			{
 				dir = Direct::brake;
 			}
 		}
-		else if (IsDown && !key_brake) // °´ÏÂË²¼ä
+		else if (IsDown && !key_brake) // æŒ‰ä¸‹ç¬é—´
 		{
 			dir = Direct::brake;
 		}
-		else // Î´°´ÏÂ
+		else // æœªæŒ‰ä¸‹
 		{
 		}
 
@@ -250,18 +250,18 @@ public:
 
 	void stop(bool IsDown)
 	{
-		if (IsDown && key_stop) // ³ÖĞø³¤°´
+		if (IsDown && key_stop) // æŒç»­é•¿æŒ‰
 		{
 			if (GetDirKeyNum() == 1)
 			{
 				dir = Direct::stop;
 			}
 		}
-		else if (IsDown && !key_stop) // °´ÏÂË²¼ä
+		else if (IsDown && !key_stop) // æŒ‰ä¸‹ç¬é—´
 		{
 			dir = Direct::stop;
 		}
-		else // Î´°´ÏÂ
+		else // æœªæŒ‰ä¸‹
 		{
 		}
 
@@ -269,7 +269,7 @@ public:
 		return;
 	}
 
-	Direct GetDir()//»ñÈ¡·½Ïò
+	Direct GetDir()//è·å–æ–¹å‘
 	{
 		if (GetDirKeyNum() != 0)
 		{
@@ -279,7 +279,7 @@ public:
 		return Direct::unassign;
 	}
 
-	int GetDirKeyNum() //»ñÈ¡Í¬Ê±°´ÏÂµÄ·½Ïò¼üÊıÁ¿
+	int GetDirKeyNum() //è·å–åŒæ—¶æŒ‰ä¸‹çš„æ–¹å‘é”®æ•°é‡
 	{
 		int result = 0;
 		if (key_brake) result++;

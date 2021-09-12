@@ -1,4 +1,4 @@
-﻿// main.cpp : Defines the entry point for the console application.  
+// main.cpp : Defines the entry point for the console application.  
 //  
 //////////////////////////////////////////////////////////////////////////  
 /// COPYRIGHT NOTICE  
@@ -18,6 +18,7 @@
 //#include "stdafx.h"  
 #include "SerialPort.h"  
 #include <iostream>  
+#include <sstream>
 #include "conio.h"
 #include "keyboard.h"
 
