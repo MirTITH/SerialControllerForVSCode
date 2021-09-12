@@ -8,14 +8,14 @@
 			"name": "g++.exe - 生成和调试活动文件",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+			"program": "${workspaceFolder}\\SerialController.exe",
 			"args": [],
 			"stopAtEntry": false,
 			"cwd": "${fileDirname}",
 			"environment": [],
 			"externalConsole": false,
 			"MIMode": "gdb",
-			"miDebuggerPath": "D:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
+			"miDebuggerPath": "gdb.exe",
 			"setupCommands": [
 				{
 					"description": "为 gdb 启用整齐打印",
