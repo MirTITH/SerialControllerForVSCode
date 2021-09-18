@@ -1,16 +1,29 @@
 /**
-* COPYRIGHT NOTICE 
-* Copyright (c) 2021, MirTITH (https://github.com/MirTITH/)
+* This file is part of SerialControllerForVSCode. 
+* Copyright (C) 2021 Xie Yang. 
 * All rights reserved. 
+* 
+* @file     main.cpp 
+* @brief    Defines the entry point for the console application. 
 *   
-* @file    main.cpp 
-* @brief   Defines the entry point for the console application. 
-*   
-* @author  谢阳
-* @version See const string VERSION
-* @email：200320620@stu.hit.edu.cn
-* @date    2021/09/12
-* #license GNU 2.0
+* @author   谢阳 (Xie Yang)
+* @version  See const string VERSION
+* @email    200320620@stu.hit.edu.cn
+* @date     2021/09/12
+* 
+* SerialControllerForVSCode is free software; you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation; either version 2 of the License, or
+* any later version.
+*
+* SerialControllerForVSCode is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License along
+* with SerialControllerForVSCode; if not, write to the Free Software Foundation, Inc.,
+* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
 //#include "stdafx.h"  
@@ -22,7 +35,7 @@
 
 using namespace std;
 
-const string VERSION = "1.0";
+const string VERSION = "1.1";
 
 stringstream SerialBuff;
 
@@ -57,9 +70,9 @@ void SendSpeed(double _speed, double _turnRatio)
 int main(int argc, char* argv[])
 {
     int portNum = 6;
-    cout << "Serial Controller \tVer. " << VERSION << endl;
-    cout << "Copyright(C) 2021, MirTITH (https://github.com/MirTITH/)" << endl;
-    cout << "All rights reserved." << endl;
+    cout << "Serial Controller Ver. " << VERSION << endl;
+    cout << "Copyright(C) 2021 Xie Yang. " << endl;
+    cout << "All rights reserved. " << endl;
     cout << endl;
     cout << "Author: 谢阳(Xie Yang)" << endl;
     cout << "E-mail: 200320620@stu.hit.edu.cn" << endl;
