@@ -7,7 +7,7 @@
 * @brief    Defines the entry point for the console application. 
 *   
 * @author   谢阳 (Xie Yang)
-* @version  See const string VERSION
+* @version  (See const string VERSION)
 * @email    200320620@stu.hit.edu.cn
 * @date     2021/09/12
 * 

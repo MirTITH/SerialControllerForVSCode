@@ -4,10 +4,10 @@
 * All rights reserved. 
 * 
 * @file     keyboard.h
-* @brief    Defines the entry point for the console application. 
+* @brief    处理键盘按键
 *   
 * @author   谢阳 (Xie Yang)
-* @version  See const string VERSION
+* @version  1.0
 * @email    200320620@stu.hit.edu.cn
 * @date     2021/09/12
 * 
